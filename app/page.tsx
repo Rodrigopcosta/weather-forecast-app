@@ -26,7 +26,7 @@ export default function Home() {
   }, [])
 
   return (
-    <main className="min-h-screen bg-gradient-to-br from-primary/10 via-background to-accent/10">
+    <main className="min-h-screen bg-linear-to-br from-primary/10 via-background to-accent/10">
       <ThemeToggle />
       <LanguageToggle />
 

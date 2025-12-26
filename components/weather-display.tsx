@@ -6,6 +6,29 @@ import type { WeatherData } from "./weather-search"
 import { ForecastChart } from "./forecast-chart"
 import { useTranslations, type Language } from "@/lib/translations"
 import { UVIndexDisplay } from "./uv-index-display"
+import ReactAnimatedWeather from "react-animated-weather"
+
+
+const weatherIconMap: Record<string, string> = {
+  "01d": "CLEAR_DAY",
+  "01n": "CLEAR_NIGHT",
+  "02d": "PARTLY_CLOUDY_DAY",
+  "02n": "PARTLY_CLOUDY_NIGHT",
+  "03d": "CLOUDY",
+  "03n": "CLOUDY",
+  "04d": "CLOUDY",
+  "04n": "CLOUDY",
+  "09d": "RAIN",
+  "09n": "RAIN",
+  "10d": "RAIN",
+  "10n": "RAIN",
+  "11d": "SLEET",
+  "11n": "SLEET",
+  "13d": "SNOW",
+  "13n": "SNOW",
+  "50d": "FOG",
+  "50n": "FOG",
+}
 
 interface WeatherDisplayProps {
   weather: WeatherData
@@ -21,16 +44,19 @@ export function WeatherDisplay({ weather, language }: WeatherDisplayProps) {
 
   const formatTemp = (temp: number) => Math.round(temp)
 
+  console.log(weather);
+
   return (
     <div className="space-y-6 animate-in fade-in slide-in-from-bottom-4 duration-500">
       {/* Card Principal */}
       <Card className="p-8 bg-card/80 backdrop-blur border-2 hover:border-primary/50 transition-colors">
         <div className="flex flex-col md:flex-row items-center justify-between gap-6">
           <div className="flex items-center gap-4">
-            <img
-              src={getWeatherIcon(weather.weather[0].icon) || "/placeholder.svg"}
-              alt={weather.weather[0].description}
-              className="w-32 h-32 animate-in zoom-in duration-500"
+            <ReactAnimatedWeather
+              icon={weatherIconMap[weather.weather[0].icon] || "CLEAR_DAY"}
+              color="#3b82f6"
+              size={128} // equivalente a w-32 h-32
+              animate={true}
             />
             <div>
               <h2 className="text-4xl font-bold mb-1">

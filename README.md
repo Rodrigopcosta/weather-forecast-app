@@ -8,12 +8,24 @@
 
 Um aplicativo moderno e completo de previsão do tempo construído com Next.js 16, React 19 e TypeScript. O app oferece dados meteorológicos em tempo real, previsão de 5 dias com gráficos interativos, suporte multilíngue, tema dark/light, índice UV, geolocalização automática e autocompletar de cidades.
 
+### Screenshots
+
+#### Desktop
+![Previsão do Tempo Desktop](./assets/screenshot-desktop.png)
+
+#### Mobile
+![Previsão do Tempo Mobile](./assets/screenshot-mobile.png)
+
+### Acesse o App
+[Ver Previsão do Tempo Online](https://weather-forecast-app-rho-nine.vercel.app/)
+
 ## Features Implementadas
 
 ### Core Features
 - **Previsão Atual**: Temperatura, sensação térmica, umidade, velocidade do vento, pressão atmosférica e nebulosidade
 - **Previsão de 5 Dias**: Visualização com gráfico interativo de temperaturas usando Recharts
 - **Índice UV**: Display em tempo real com alertas visuais baseados no nível de radiação (Baixo, Moderado, Alto, Muito Alto, Extremo)
+- **Ícones Climáticos**: Integração com ícones oficiais da API OpenWeatherMap mostrando condições reais (sol, chuva, nuvens, etc.)
 - **Ícones Climáticos**: Integração com ícones oficiais da API OpenWeatherMap mostrando condições reais (sol, chuva, nuvens, etc.)
 
 ### UX/UI Avançada
@@ -102,6 +114,8 @@ weather-forecast-app/
 │   └── translations.ts           # Sistema de traduções (pt-BR, en-US, es-ES)
 ├── public/
 │   └── manifest.json             # PWA manifest
+├── types/                        # Declarações de tipos personalizados
+│   └── react-animated-weather.d.ts
 ├── LICENSE                       # Licença MIT
 └── README.md                     # Este arquivo
 ```
