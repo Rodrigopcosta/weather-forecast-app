@@ -11,10 +11,10 @@ Um aplicativo moderno e completo de previsão do tempo construído com Next.js 1
 ### Screenshots
 
 #### Desktop
-![Previsão do Tempo Desktop](./assets/screenshot-desktop.png)
+![Previsão do Tempo Desktop](./public/screenshot-desktop.png)
 
 #### Mobile
-![Previsão do Tempo Mobile](./assets/screenshot-mobile.png)
+![Previsão do Tempo Mobile](./public/screenshot-mobile.png)
 
 ### Acesse o App
 [Ver Previsão do Tempo Online](https://weather-forecast-app-rho-nine.vercel.app/)
