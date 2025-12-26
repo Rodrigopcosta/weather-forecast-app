@@ -214,15 +214,6 @@ O tema é persistido no localStorage e aplicado em:
 - **LocalStorage**: Persistência de preferências e histórico
 - **React Hooks**: useState, useEffect, useCallback, useMemo otimizados
 
-## Deploy
-
-O projeto está pronto para deploy na Vercel:
-
-```bash
-vercel deploy
-```
-
-Não esqueça de adicionar a variável de ambiente `OPENWEATHER_API_KEY` nas configurações do projeto na Vercel.
 
 ## Melhorias Futuras Possíveis
 
@@ -234,12 +225,8 @@ Não esqueça de adicionar a variável de ambiente `OPENWEATHER_API_KEY` nas con
 - [ ] Testes unitários (Jest) e E2E (Playwright)
 - [ ] Animações meteorológicas de fundo (chuva, neve, etc.)
 
-## Licença
-
-Este projeto está sob a licença MIT. Veja o arquivo [LICENSE](LICENSE) para mais detalhes.
 
 ## Autor
-
 
 **Rodrigo Costa**
 
