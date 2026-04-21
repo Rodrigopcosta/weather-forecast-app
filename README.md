@@ -6,18 +6,15 @@
 [![Tailwind CSS](https://img.shields.io/badge/TailwindCSS-v4-38B2AC)](https://tailwindcss.com/docs)
 [![License](https://img.shields.io/badge/License-MIT-green)](LICENSE)
 
-Um aplicativo moderno e completo de previsão do tempo construído com Next.js 16, React 19 e TypeScript. O app oferece dados meteorológicos em tempo real, previsão de 5 dias com gráficos interativos, suporte multilíngue, tema dark/light, índice UV, geolocalização automática e autocompletar de cidades.
+![Previsão do Tempo Desktop](./public/desktop.png)
 
-### Screenshots
+![Previsão do Tempo Mobile](./public/mobile.png)
 
-#### Desktop
-![Previsão do Tempo Desktop](./public/screenshot-desktop.png)
-
-#### Mobile
-![Previsão do Tempo Mobile](./public/screenshot-mobile.png)
-
-### Acesse o App
 [Ver Previsão do Tempo Online](https://weather-forecast-app-rho-nine.vercel.app/)
+
+---
+
+Um aplicativo moderno e completo de previsão do tempo construído com Next.js 16, React 19 e TypeScript. O app oferece dados meteorológicos em tempo real, previsão de 5 dias com gráficos interativos, suporte multilíngue, tema dark/light, índice UV, geolocalização automática e autocompletar de cidades.
 
 ## Features Implementadas
 
@@ -25,7 +22,6 @@ Um aplicativo moderno e completo de previsão do tempo construído com Next.js 1
 - **Previsão Atual**: Temperatura, sensação térmica, umidade, velocidade do vento, pressão atmosférica e nebulosidade
 - **Previsão de 5 Dias**: Visualização com gráfico interativo de temperaturas usando Recharts
 - **Índice UV**: Display em tempo real com alertas visuais baseados no nível de radiação (Baixo, Moderado, Alto, Muito Alto, Extremo)
-- **Ícones Climáticos**: Integração com ícones oficiais da API OpenWeatherMap mostrando condições reais (sol, chuva, nuvens, etc.)
 - **Ícones Climáticos**: Integração com ícones oficiais da API OpenWeatherMap mostrando condições reais (sol, chuva, nuvens, etc.)
 
 ### UX/UI Avançada
@@ -62,7 +58,7 @@ Um aplicativo moderno e completo de previsão do tempo construído com Next.js 1
 
 1. Clone o repositório:
 ```bash
-git clone <seu-repositorio>
+git clone https://github.com/Rodrigopcosta/weather-forecast-app.git
 cd weather-forecast-app
 ```
 
@@ -77,8 +73,6 @@ Se estiver rodando localmente, crie um arquivo `.env.local` na raiz do projeto:
 ```env
 OPENWEATHER_API_KEY=sua_chave_aqui
 ```
-
-Se estiver usando v0, adicione a variável na seção **Vars** (variáveis) do painel lateral.
 
 Para obter uma chave gratuita, acesse: [OpenWeatherMap API](https://openweathermap.org/api)
 
@@ -214,7 +208,6 @@ O tema é persistido no localStorage e aplicado em:
 - **LocalStorage**: Persistência de preferências e histórico
 - **React Hooks**: useState, useEffect, useCallback, useMemo otimizados
 
-
 ## Melhorias Futuras Possíveis
 
 - [ ] Notificações push de alertas meteorológicos severos
@@ -224,15 +217,6 @@ O tema é persistido no localStorage e aplicado em:
 - [ ] Service Workers para cache offline completo
 - [ ] Testes unitários (Jest) e E2E (Playwright)
 - [ ] Animações meteorológicas de fundo (chuva, neve, etc.)
-
-
-## Autor
-
-**Rodrigo Costa**
-
-- 💼 LinkedIn: https://www.linkedin.com/in/rodrigopc-developer/ 
-- 💻 GitHub: https://github.com/Rodrigopcosta
-- 🌐 Portfólio: https://rodrigopcosta.github.io/
 
 Projeto desenvolvido para demonstrar competências em desenvolvimento Frontend moderno, com foco em performance, UX e boas práticas.
 - **React 19 e Next.js 16** (features mais recentes)
@@ -246,7 +230,15 @@ Projeto desenvolvido para demonstrar competências em desenvolvimento Frontend m
 
 ---
 
-**Nota Importante**: 
+**Nota Importante**:
 - Este projeto utiliza a API gratuita do OpenWeatherMap que possui limite de 60 chamadas por minuto
 - Para uso em produção com alto tráfego, considere planos pagos da OpenWeatherMap
 - A chave de API deve ser mantida em segredo e nunca commitada no repositório
+
+## Autor
+
+**Rodrigo Costa**
+
+- 💼 LinkedIn: https://www.linkedin.com/in/rodrigopc-developer/
+- 💻 GitHub: https://github.com/Rodrigopcosta
+- 🌐 Portfólio: https://rodrigopcosta.github.io/
