@@ -10,7 +10,7 @@
 
 ![Previsão do Tempo Mobile](./public/screenshots/mobile.png)
 
-[Ver Previsão do Tempo Online](https://weather-forecast-app-rho-nine.vercel.app/)
+[Ver Demo ao Vivo](https://weather-forecast-app-rho-nine.vercel.app/)
 
 ---
 
